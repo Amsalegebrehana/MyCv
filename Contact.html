@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  type="image/png" href="./asset/image/ag.PNG">
+    <link rel="stylesheet" href="./asset/css/Style.css">
+    <title>Amsale</title>
+   
+</head>
+<body>
+    <!-- Navigation -->
+    <header  class="fixed_nav">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" target="_blank">Home</a>
+                </li>
+                <li>
+                    <a href="Contact.html" target="_blank">Contact</a>
+                </li>
+                <li>
+                    <a href="Gallery.html" target="_blank">Gallery</a>
+                </li>
+                <li>
+                    <a href="MyWorks.html" target="_blank">My Works</a>
+                </li>
+               <li> 
+                  <a href="blog.html" target="_blank">Blog</a>
+            </li>
+            </ul>
+        </nav>
+    </header>
+   
+    <section id="pre" style="background-color: #8aaef0;padding: 20px 0 50px 0;text-align: center">
+        <div class="contain">
+       
+    <div class="row">
+      
+        <div class="col">
+            <p id="assiTitle"> get in touch!</p>
+         
+        </div>
+      
+    </div>
+    
+        </div>
+      </section>
+   
+<!-- Contact form -->
+    <div class="con-form">
+       <div class="crow">
+            <div class="con">
+           
+            <iframe width="800" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=Addis%20Ababa%20Institute%20of%20Technology&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%;"></iframe>
+    
+             </div>
+        <div class="con" >
+            
+            <form method="POST" action="malito:se.amsale.gebrehana@gmil.com" enctype="utf-8">
+                
+                    <label for="fname"></label>
+                    <input type="text" id="fname" name="name" required placeholder="First Name"
+                    pattern="[A-Za-z]{1,15}" title="1 to 15 letters">
+                
+                    <label for="lname"></label>
+                    <input type="text" id="lname" name="lname" required placeholder="Last Name"
+                pattern="[A-Za-z]{1,15}" title="1 to 15 letters">
+                
+                    <label for="passwowrd"></label>
+                <input type="password" name="password" id="password" pattern="[A-Za-z\d\.\*\S]{8,12}" 
+                title="Passoword must be between 8 and 12 characters " placeholder="password" required >
+                
+                    <label for="phone no."> </label>
+                <input type="tel" name="phone no." id="phone no." pattern="[\d]{10}" 
+                    title="Phone number must be 10 digits" placeholder="+251" required >
+                
+                    <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+               
+                    <label for="country"></label>
+               
+                <select name="contry" id="country">
+                    <option value="et">Ethiopia</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+              
+                    <label for="start"></label>
+                    <input type="date" id="start" min="2020-03-03">
+                <div>
+                    <textarea name="detail" id="detail" placeholder="Write something.." style="height:170px"></textarea>
+                
+               
+                    <input id="submit" type="submit" value="submit"> 
+                
+            </form>
+        </div>
+        
+       </div>
+       
+    </div>
+    <div class="footer">
+        <a href="https://www.telegram.com">Telegram</a>
+        <a href="https://www.facebook.com">Facebook</a>
+    
+    
+        <p> Developed by Amsale G.&copy;</p>
+
+    </div>
+    
+</body>
+</html>
