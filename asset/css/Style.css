@@ -45,7 +45,54 @@ nav > ul > li > a{
 nav > ul > li > a:hover{
     color: #54a2e2;
 }
+/*index*/
+.index_top{
+    margin-top: 5%;
+    border-bottom: 3px solid #54a2e2;
+    display: flex;
+    padding: 2%;
+}
+#proname{
+    margin-left: 10%;
+    margin-top: 10%;
+    color: #444;
+    font-family: Times, 'Times New Roman', serif;
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 200;
+}
 
+#proname > h3{
+    font-family: sans-serif;
+}
+.index_top > h1{
+    padding: 10%;
+}
+.index_top > div>img{
+    border-radius: 100%;
+
+}
+#a-a{
+    font-size: 16px;
+    font-style: italic;
+}
+.sty-be{
+   border-top: 1px solid #54a2e2;
+}
+.wrow{
+    border-bottom: 1px solid #54a2e2 ;
+}
+.wtrow{
+    display: flex;
+    border-bottom: 2px solid #54a2e2 ;
+}
+.wcol{
+    
+    padding: 3.5%;
+}
+#emoj{
+    margin-left: 10%;
+}
 #flagTitle{
     text-align: center;
     margin: 25px;
@@ -124,6 +171,9 @@ nav > ul > li > a:hover{
 a{
     text-decoration: none;
     color: black;
+}
+a:hover{
+    color: #8aaef0;
 }
 .image{
     
