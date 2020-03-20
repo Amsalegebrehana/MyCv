@@ -50,16 +50,28 @@
         </section>
     <div >
         <section>         
-            <h2 id="htwo">Default Browser font setting</h2>
+            <h2 id="htwo">Default Browser font Setting</h2>
             <article>
                 <p>
                     <div class="text">
-                        When we say 200px we’re actually telling the browser to change the default font size from the 16px and 
-                        it’s going to interpret that as overriding its default. So the rest of the elements are going 
+                        Adding font size adjusts the style won't make any difference to the look
+                        of the normal text as long as we use the correct aspect ratio.
+                        In order to disable the default browser's context menu or to change the default font size from the 16px to 200px, 
+                        we’re actually telling the browser 
+                        to interpret that as overriding its default. So the rest of the elements are going 
                         to inherit from the given size instead of the original default font size of the browser.
-    
+                        <br>
+                        If we change one of those settings in our browser, ideally all our fonts will scale up (or down) proportionately 
+                        in reference to the size of that font setting. Ideally, that is, if you’re using relative CSS units. This browser font 
+                        size adjustment won’t have any effect on typography that uses
+                         pixels for font-size and/or the line-height. 
+                        <br>
+                        If we adjust the page zoom setting of 200 and keep the browser font size at the default medium (16), 
+                        there won’t be perceivable differences between the containers.
     
                     </div>
+                    <p><a href="https://www.24a11y.com/2019/pixels-vs-relative-units-in-css-why-its-still-a-big-deal/"><u><i>Link</i></u></a></p>
+           
                 </p>
           </article>
           <p class="date">
@@ -81,13 +93,18 @@
                     it’s more manageable. Importantly, to create a uniform scalable design, our media queries should 
                     also be in relative sizing units. This will ensure that whatever user browser font sizes, 
                     your media queries will respond to it and adjust your layout.
-                    <br> Zooming effect using (rem) units, if the user increases their font size the integrity of 
+                    <br> The most important reason for using responsive and unitless values in our CSS is for supporting our users that rely on zooming. 
+                    Zooming effect using (rem) units, if the user increases their font size the integrity of 
                     the layout will be preserved, and the text won’t get squashed up in a rigid space meant for smaller 
                     text. And if the user decreases their font size, the entire layout scales down, and they won’t be 
                     left with a tiny smattering of text in a wasteland of white space. 
                     Use relative size like (%) not (em or rem) for column widths in a layout so they can fluidly 
                     fit unpredictably sized viewpoints. However to keep the column flexible and scalable, single 
-                    column should still generally incorporate (rem) values.
+                    column should still generally incorporate (rem) values.Yes, browsers handle page zoom for us, yet there’s a 
+                    difference between how the UI appears when the page is zoomed, depending on whether the default browser size has been 
+                    adjusted as well. Users do bother to adjust the font display 
+                    settings in the browser so we need to account for that in our CSS declarations.
+                    
                     <br> Generally using relative size units gives us flexibility in our designs, and the ablity 
                     to scale elements up and down, instead of being stuck with fixed sizes. And it allow browser users 
                     to control the overall scale of sites for maximum readability.
